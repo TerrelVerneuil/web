@@ -200,7 +200,7 @@ function App() {
                 }}
                 onMouseEnter={handleNo}
               >
-                No >:(
+                No...
               </button>
             </div>
           )}
