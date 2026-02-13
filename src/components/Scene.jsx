@@ -7,7 +7,8 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Scene(props) {
-  const { nodes, materials } = useGLTF('/models/valentinesDay.glb')
+  const { nodes, materials } = useGLTF('https://github.com/TerrelVerneuil/web/releases/download/v1.0/valentinesDay.glb')
+
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Cube001.geometry} material={materials.brick} />
@@ -166,4 +167,4 @@ export function Scene(props) {
   )
 }
 
-useGLTF.preload('/models/valentinesDay.glb')
+useGLTF.preload('https://github.com/TerrelVerneuil/web/releases/download/v1.0/valentinesDay.glb')
